@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Accueil from './Accueil';
+import Equipe from './Equipe';
+import ConfirmationPage from './Envoyer/ConfirmationPage';
+import Projets from './Projets';
+import AvoirPlus from './AvoirPlus';
+import Contact from './Contact';
+import Evenements from './Evenements';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ backgroundColor: '#fdf6ec', minHeight: '100vh',margin:'-6px' }}>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Accueil />} />
+        <Route path="/Equipe" element={<Equipe />} />
+        <Route path="/Envoyer/ConfirmationPage" element={<ConfirmationPage />} />
+        <Route path="/Projets" element={<Projets/>} />
+        <Route path='/AvoirPlus' element={<AvoirPlus/>}/>
+        <Route path='/Contact' element={<Contact/>}/>
+        <Route path='/Evenements' element={<Evenements/>}/>
+      </Routes>
+      </Router>
     </div>
   );
 }
