@@ -23,8 +23,7 @@ const testimonials = [
     photo: member3,
   },
 ];
-
-export default function TemoignageSection() {
+function TemoignageSection() {
   const [hoveredCard, setHoveredCard] = useState(null);
 
   return (
@@ -124,3 +123,4 @@ const styles = {
     },
   },
 };
+export default TemoignageSection;

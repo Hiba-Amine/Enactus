@@ -2,7 +2,7 @@ import React from 'react';
 import heroImage from '../images/Compétition Demi Final.JPG';
 import backgroundImage from '../images/149441939_01784fb2-e758-4ed7-ad0b-1bd195549471.jpg';
 import { useNavigate } from 'react-router-dom';
-export default function HeroSection() {
+function HeroSection() {
   const navigate = useNavigate();
   return (
     <section
@@ -92,3 +92,4 @@ const styles = {
     border: 'solid orange',
   },
 };
+export default HeroSection;

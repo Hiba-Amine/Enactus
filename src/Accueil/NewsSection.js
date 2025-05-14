@@ -37,8 +37,7 @@ const news = [
     image: event4,
   },
 ];
-
-export default function NewsSection() {
+function NewsSection() {
   const navigate = useNavigate();
 
   const goToEvenements = () => {
@@ -188,3 +187,4 @@ const styles = {
     transition: 'transform 0.3s ease, background-color 0.3s ease',
   },
 };
+export default NewsSection;

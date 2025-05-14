@@ -1,6 +1,6 @@
 import React from 'react';
 import Counter from './Counter';
-export default function CounterSection() {
+function CounterSection() {
   return (
     <section style={styles.section}>
       <div style={styles.content}>
@@ -106,3 +106,4 @@ const styles = {
     color: 'grey',
   },
 };
+export default CounterSection;

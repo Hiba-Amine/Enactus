@@ -6,6 +6,7 @@ import Projets from './Projets';
 import AvoirPlus from './AvoirPlus';
 import Contact from './Contact';
 import Evenements from './Evenements';
+import Error from './Error';
 function App() {
   return (
     <div style={{ backgroundColor: '#fdf6ec', minHeight: '100vh',margin:'-6px' }}>
@@ -18,6 +19,7 @@ function App() {
         <Route path='/AvoirPlus' element={<AvoirPlus/>}/>
         <Route path='/Contact' element={<Contact/>}/>
         <Route path='/Evenements' element={<Evenements/>}/>
+        <Route path="*" element={<Error />} />
       </Routes>
       </Router>
     </div>

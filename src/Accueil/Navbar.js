@@ -1,8 +1,7 @@
 import React from 'react';
 import logo from '../images/logo - enactus fsbm.png';
 import { NavLink } from 'react-router-dom';
-
-export default function Navbar() {
+function Navbar() {
   return (
     <>
       <style>
@@ -83,3 +82,4 @@ const styles = {
     TextDecoration:'none',
   },
 };
+export default Navbar;

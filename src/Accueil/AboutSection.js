@@ -1,7 +1,7 @@
 import React from "react";
 import img from "../images/Comp-D.Final-Prix.JPG";
-import { useNavigate } from 'react-router-dom';
-export default function AboutSection(){
+import { useNavigate } from 'react-router-dom';      
+function AboutSection(){
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
@@ -107,3 +107,4 @@ const styles ={
         },
       },
     };
+    export default AboutSection;

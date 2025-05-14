@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
-export default function Counter({ end, duration = 2000, color, fontSize = '32px' }) {
+function Counter({ end, duration = 2000, color, fontSize = '32px' }) {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -24,3 +23,4 @@ export default function Counter({ end, duration = 2000, color, fontSize = '32px'
     </span>
   );
 }
+export default Counter;
